@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="按编号或标题检索 SCP 基金会中文档案。">
+<title>检索 — SCP 基金会中文档案数据库</title>
+<link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="search">
+<a class="skip-link" href="#main">跳到正文</a>
+
+<header class="site-header">
+  <div class="shell">
+    <a class="brand" href="index.html" aria-label="SCP 基金会中文档案数据库首页">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" fill="none" stroke="#6fd3e0" stroke-width="1.4">
+          <path d="M16 2.5l11.7 6.8v13.4L16 29.5 4.3 22.7V9.3z"/>
+          <circle cx="16" cy="16" r="4.6"/>
+          <path d="M16 5.4v5.9M16 20.7v5.9M6.4 16h5.9M19.7 16h5.9"/>
+        </svg>
+      </span>
+      <span class="brand-text"><b>SCP FOUNDATION</b><small>中文档案数据库</small></span>
+    </a>
+    <nav class="site-nav" id="site-nav" aria-label="主导航">
+      <a href="index.html" data-nav="home">首页</a>
+      <a href="browse.html" data-nav="browse">全编号目录</a>
+      <a href="series.html" data-nav="series">系列</a>
+      <a href="search.html" data-nav="search">检索</a>
+      <a href="credits.html" data-nav="credits">关于</a>
+    </nav>
+    <button class="nav-toggle" type="button" aria-label="展开导航" aria-controls="site-nav" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+  <section class="search-hero">
+    <div class="shell">
+      <div class="kicker">QUERY TERMINAL / TITLE + NUMBER</div>
+      <h1>检索档案</h1>
+      <p>输入编号或标题。支持 SCP-173、173、雕像、疫医等写法。</p>
+      <form class="search-box" id="search-form" role="search">
+        <label class="sr-only" for="search-input">搜索编号或标题</label>
+        <input class="input" id="search-input" type="search" placeholder="SCP-173 / 雕像 / 疫医" autocomplete="off" autofocus>
+        <button class="btn btn-primary" type="submit">开始检索</button>
+      </form>
+      <div class="search-hints">
+        <span>快速入口</span>
+        <a href="search.html?q=SCP-173">SCP-173 雕像</a>
+        <a href="search.html?q=SCP-682">SCP-682 不灭孽蜥</a>
+        <a href="search.html?q=SCP-049">SCP-049 疫医</a>
+        <a href="search.html?q=SCP-999">SCP-999 痒痒怪</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="shell search-wrap">
+    <div class="results-bar">
+      <p id="search-summary">输入关键词开始检索</p>
+      <p id="search-range"></p>
+    </div>
+    <div id="search-results" aria-live="polite">
+      <div class="empty"><strong>等待查询</strong><p>编号与标题支持部分匹配。也可以从全编号目录进入。</p></div>
+    </div>
+    <div id="search-pagination"></div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="shell">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none" stroke="#6fd3e0" stroke-width="1.4"><path d="M16 2.5l11.7 6.8v13.4L16 29.5 4.3 22.7V9.3z"/><circle cx="16" cy="16" r="4.6"/><path d="M16 5.4v5.9M16 20.7v5.9M6.4 16h5.9M19.7 16h5.9"/></svg>
+        </span>
+        <div><b>SCP FOUNDATION</b><small>ARCHIVE TERMINAL / CN</small></div>
+      </div>
+      <div class="footer-copy">内容基于 SCP 基金会共笔创作，遵循 <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>。本站为非官方中文档案整理，仅作个人查阅。</div>
+      <div class="footer-links"><a href="browse.html">目录</a><a href="search.html">检索</a><a href="credits.html">关于</a></div>
+    </div>
+    <div class="footer-bottom">
+      <span>SCP FOUNDATION / UNAUTHORIZED ARCHIVE MIRROR</span>
+      <span>© <span id="year">2026</span> · NOT AFFILIATED WITH THE SCP FOUNDATION</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/app.js" defer></script>
+<script src="js/search.js" defer></script>
+</body>
+</html>

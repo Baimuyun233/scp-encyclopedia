@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="SCP 基金会中文档案数据库，收录 SCP-001 至 SCP-9999 全编号目录与中文正文。">
+<title>SCP 基金会中文档案数据库</title>
+<link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+<a class="skip-link" href="#main">跳到正文</a>
+
+<header class="site-header">
+  <div class="shell">
+    <a class="brand" href="index.html" aria-label="SCP 基金会中文档案数据库首页">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" fill="none" stroke="#6fd3e0" stroke-width="1.4">
+          <path d="M16 2.5l11.7 6.8v13.4L16 29.5 4.3 22.7V9.3z"/>
+          <circle cx="16" cy="16" r="4.6"/>
+          <path d="M16 5.4v5.9M16 20.7v5.9M6.4 16h5.9M19.7 16h5.9"/>
+        </svg>
+      </span>
+      <span class="brand-text"><b>SCP FOUNDATION</b><small>中文档案数据库</small></span>
+    </a>
+    <nav class="site-nav" id="site-nav" aria-label="主导航">
+      <a href="index.html" data-nav="home">首页</a>
+      <a href="browse.html" data-nav="browse">全编号目录</a>
+      <a href="series.html" data-nav="series">系列</a>
+      <a href="search.html" data-nav="search">检索</a>
+      <a href="credits.html" data-nav="credits">关于</a>
+    </nav>
+    <button class="nav-toggle" type="button" aria-label="展开导航" aria-controls="site-nav" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="shell hero-grid">
+      <div>
+        <div class="kicker">FOUNDATION ARCHIVE / CN</div>
+        <h1>异常，<br>已被<em>记录</em>。</h1>
+        <p class="hero-lede">SCP 基金会中文档案的非官方整理版。按编号归档，保留收容措施、描述与附录；未收录正文的编号也保留在目录中。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="browse.html">
+            进入全编号目录
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"/></svg>
+          </a>
+          <a class="btn" href="search.html">检索档案</a>
+        </div>
+        <div class="hero-stats" aria-label="站点统计">
+          <div><strong id="stat-total">9,999</strong><span>编号总数</span></div>
+          <div><strong id="stat-filled">—</strong><span>已收录正文</span></div>
+          <div><strong id="stat-series">10</strong><span>系列</span></div>
+          <div><strong id="stat-tags">—</strong><span>主题标签</span></div>
+        </div>
+      </div>
+
+      <aside class="terminal" aria-label="随机档案预览">
+        <div class="terminal-bar"><span><i></i>ARCHIVE FEED</span><span>RANDOM SAMPLE</span></div>
+        <div class="terminal-body">
+          <div class="terminal-media">
+            <img id="terminal-img" src="assets/images/placeholder.svg" alt="" loading="lazy">
+            <span class="terminal-id" id="terminal-id">SCP-000</span>
+          </div>
+          <h3 id="terminal-title"><a href="browse.html">正在读取档案</a></h3>
+          <p class="terminal-desc" id="terminal-desc">正在连接档案索引。</p>
+          <div class="terminal-foot">
+            <div id="terminal-badges"></div>
+            <span class="mono" id="terminal-series">SERIES 00</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="shell home-section" aria-labelledby="series-title">
+    <div class="section-head">
+      <div>
+        <h2 id="series-title">按系列归档</h2>
+        <div class="sub">SCP-001 — SCP-9999 / 10 SERIES</div>
+      </div>
+      <a href="browse.html">查看全部编号</a>
+    </div>
+    <div class="series-grid" id="series-grid">
+      <a class="series-card" href="series.html?series=1">
+        <img src="assets/images/series-01.svg" alt="" loading="lazy">
+        <div class="series-card-body"><span class="idx">SERIES 01</span><span class="count" data-series-count="1"></span><h3>系列 01</h3><p>001 — 999</p></div>
+      </a>
+      <a class="series-card" href="series.html?series=2">
+        <img src="assets/images/series-02.svg" alt="" loading="lazy">
+        <div class="series-card-body"><span class="idx">SERIES 02</span><span class="count" data-series-count="2"></span><h3>系列 02</h3><p>1000 — 1999</p></div>
+      </a>
+      <a class="series-card" href="series.html?series=3">
+        <img src="assets/images/series-03.svg" alt="" loading="lazy">
+        <div class="series-card-body"><span class="idx">SERIES 03</span><span class="count" data-series-count="3"></span><h3>系列 03</h3><p>2000 — 2999</p></div>
+      </a>
+      <a class="series-card" href="series.html?series=4">
+        <img src="assets/images/series-04.svg" alt="" loading="lazy">
+        <div class="series-card-body"><span class="idx">SERIES 04</span><span class="count" data-series-count="4"></span><h3>系列 04</h3><p>3000 — 3999</p></div>
+      </a>
+      <a class="series-card" href="series.html?series=5">
+        <img src="assets/images/series-05.svg" alt="" loading="lazy">
+        <div class="series-card-body"><span class="idx">SERIES 05</span><span class="count" data-series-count="5"></span><h3>系列 05</h3><p>4000 — 4999</p></div>
+      </a>
+      <a class="series-card" href="series.html?series=6">
+        <img src="assets/images/series-06.svg" alt="" loading="lazy">
+        <div class="series-card-body"><span class="idx">SERIES 06</span><span class="count" data-series-count="6"></span><h3>系列 06</h3><p>5000 — 5999</p></div>
+      </a>
+      <a class="series-card" href="series.html?series=7">
+        <img src="assets/images/series-07.svg" alt="" loading="lazy">
+        <div class="series-card-body"><span class="idx">SERIES 07</span><span class="count" data-series-count="7"></span><h3>系列 07</h3><p>6000 — 6999</p></div>
+      </a>
+      <a class="series-card" href="series.html?series=8">
+        <img src="assets/images/series-08.svg" alt="" loading="lazy">
+        <div class="series-card-body"><span class="idx">SERIES 08</span><span class="count" data-series-count="8"></span><h3>系列 08</h3><p>7000 — 7999</p></div>
+      </a>
+      <a class="series-card" href="series.html?series=9">
+        <img src="assets/images/series-09.svg" alt="" loading="lazy">
+        <div class="series-card-body"><span class="idx">SERIES 09</span><span class="count" data-series-count="9"></span><h3>系列 09</h3><p>8000 — 8999</p></div>
+      </a>
+      <a class="series-card" href="series.html?series=10">
+        <img src="assets/images/series-10.svg" alt="" loading="lazy">
+        <div class="series-card-body"><span class="idx">SERIES 10</span><span class="count" data-series-count="10"></span><h3>系列 10</h3><p>9000 — 9999</p></div>
+      </a>
+    </div>
+  </section>
+
+  <section class="shell home-section" aria-labelledby="random-title">
+    <div class="section-head">
+      <div>
+        <h2 id="random-title">随机调阅</h2>
+        <div class="sub">RANDOM ACCESS / FROM THE ARCHIVE</div>
+      </div>
+      <button class="btn btn-sm btn-ghost" type="button" id="random-refresh">换一批</button>
+    </div>
+    <div class="entry-grid" id="random-grid">
+      <div class="loading">正在抽取档案</div>
+    </div>
+  </section>
+
+  <section class="shell">
+    <div class="manifesto">
+      <div><span>01 / INDEX</span><h3>全编号保留</h3><p>SCP-001 至 SCP-9999 全部列入目录，按系列分组，不因缺少正文而消失。</p></div>
+      <div><span>02 / CLASS</span><h3>等级与标签</h3><p>按 Safe、Euclid、Keter 等项目等级筛选，也可按主题标签横向查找。</p></div>
+      <div><span>03 / ACCESS</span><h3>敏感内容折叠</h3><p>含成人或敏感内容的档案默认关闭，展开前会显示明确警示。</p></div>
+    </div>
+  </section>
+
+  <section class="shell home-section" style="padding-bottom:64px">
+    <div class="random-bar">
+      <p><b>档案不是故事。</b> 它是一份被反复确认、删改、封存的记录。</p>
+      <a class="btn btn-sm" href="credits.html">来源与授权</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="shell">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none" stroke="#6fd3e0" stroke-width="1.4">
+            <path d="M16 2.5l11.7 6.8v13.4L16 29.5 4.3 22.7V9.3z"/>
+            <circle cx="16" cy="16" r="4.6"/>
+            <path d="M16 5.4v5.9M16 20.7v5.9M6.4 16h5.9M19.7 16h5.9"/>
+          </svg>
+        </span>
+        <div><b>SCP FOUNDATION</b><small>ARCHIVE TERMINAL / CN</small></div>
+      </div>
+      <div class="footer-copy">内容基于 SCP 基金会共笔创作，遵循 <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>。本站为非官方中文档案整理，仅作个人查阅。</div>
+      <div class="footer-links">
+        <a href="browse.html">目录</a>
+        <a href="search.html">检索</a>
+        <a href="credits.html">关于</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>SCP FOUNDATION / UNAUTHORIZED ARCHIVE MIRROR</span>
+      <span>© <span id="year">2026</span> · NOT AFFILIATED WITH THE SCP FOUNDATION</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/app.js" defer></script>
+<script src="js/index.js" defer></script>
+</body>
+</html>
